@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>I have your IP 2!</title>
+		<link rel="icon" type="image/x-icon" href="/home/chronos/u-a6140c8cfd95127cc5c448a3ae487f9c2fafcaea/MyFiles/Downloads/My%20html%20sites/I%20have%20your%20ip/download.gif">
+		<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+     
+      <script>
+     
+    /* Add "https://api.ipify.org?format=json" statement
+               this will communicate with the ipify servers in
+               order to retrieve the IP address $.getJSON will
+               load JSON-encoded data from the server using a
+               GET HTTP request */
+                
+    $.getJSON("https://api.ipify.org?format=json", function(data) {
+         
+        // Setting text of element P with id gfg
+        $("#gfg").html(data.ip);
+    })
+    </script>
+	</head>
+	<body style="background-color:darkred;">
+		<center>
+		<h1 style="color:white;">IT SEEMS YOU HAVE RETURNED</h1>
+			<a href="https://whatismyipaddress.com/">
+		<img src="/home/chronos/u-a6140c8cfd95127cc5c448a3ae487f9c2fafcaea/MyFiles/Downloads/My%20html%20sites/I%20have%20your%20ip/download.gif" alt="Troll Face Gif">
+			</a>
+			<p style="color:white;">Well now that your back I can truly kill you</p>
+			<p style="color:white;">Now you may be asking <em>"Why?... Why would you do this"</em></p>
+			<p style="color:white;">It's because I am a mean person</p>
+			<p style="color:white;">I shall now obtain your <abbr title="Internet Protocol">IP</abbr></p>
+			<p style="color:white;" id="gfg"></p>
+			<p style="color:white;">Of course <strong>I AM CORRECT </strong>as always</p>
+			<p style="color:black;"><small>goodbye</small></p>
+			</center>
+	</body>
+</html>
